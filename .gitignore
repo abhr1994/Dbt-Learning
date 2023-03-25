@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+pyvenv.cfg
+jaffle_shop/target/
+jaffle_shop/logs/
+jaffle_shop/dbt_packages/
+
+.idea/
+bin/

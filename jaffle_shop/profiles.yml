@@ -1,0 +1,23 @@
+jaffle_shop:
+  outputs:
+    dev:
+      account: "{{ env_var('SF_ACCOUNT') }}"
+      database: ABHI_DATABASE
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      schema: dbt_abhi
+      threads: 4
+      type: snowflake
+      user: "{{ env_var('DBT_USER') }}"
+      warehouse: DEMO_WH
+    prod:
+      account: "{{ env_var('SF_ACCOUNT') }}"
+      database: ABHI_DATABASE
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      schema: prod_analytics
+      threads: 4
+      type: snowflake
+      user: "{{ env_var('DBT_USER') }}"
+      warehouse: DEMO_WH
+  target: dev
