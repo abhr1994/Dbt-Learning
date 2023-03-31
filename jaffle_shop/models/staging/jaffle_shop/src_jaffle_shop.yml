@@ -6,6 +6,8 @@ sources:
     database: abhi_database
     schema: jaffle_shop
     tables:
+      - name: mock_orders
+        description: the mock orders table for snapshot testing
       - name: customers
         description: the raw customers data
         columns:
